@@ -4,7 +4,7 @@ const createUser = async (req, res) => {
     try {
         const user = new User(req.body);
         await user.save();
-        res.status(201).json({ user, message: 'Usuário criado com Sucesso' });
+        res.status(201).json({ user, message: 'Usuário criado com sucesso' });
     } catch (err) {
         res.status(400).send({ error: err.message });
     }
@@ -13,7 +13,7 @@ const createUser = async (req, res) => {
 const getAllUsers = async (req, res) => {
     try {
         const users = await User.find({});
-        res.status(200).json({ users });
+        res.status(200).json({ users, message: 'Todos os usuários listados' });
     } catch (err) {
         res.status(500).send({ error: err.message });
     }
