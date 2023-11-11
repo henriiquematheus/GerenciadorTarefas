@@ -60,7 +60,7 @@ Faça login:
 }
 
 ```
-pegue o token gerado e então:
+pegue o Bearer token gerado e então:
 
 Crie uma task:
 
