@@ -15,6 +15,8 @@ router.get('/test', auth, (req, res) => {
 // criar user
 router.post('/', userController.createUser);
 
+router.get('/', auth, userController.getAllUsers);
+
 // login user
 router.post('/login', userController.loginUser);
 
