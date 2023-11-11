@@ -1,4 +1,5 @@
 # GerenciadorTarefas
+API Restful de um gerenciador de tarefas
 
 ## Documentação da API
 
