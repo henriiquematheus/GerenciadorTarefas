@@ -45,9 +45,9 @@ Crie um user:
 
 ```json
 {
-    "name": "user123",
-    "email": "usuario@email.com",
-    "password": "senha123"
+    "name": "user001",
+    "email": "usuario1@email.com",
+    "password": "123"
 }
 ```
 ```json
