@@ -50,10 +50,23 @@ Crie um user:
     "password": "123456"
 }
 ```
+Faça login:
+
 ```json
-Crie uma task:
 {
-    "descricao": "Descrição da Tarefa",
+    "email": "usuario1@email.com",
+    "password": "123456"
+}
+
+```
+pegue o token gerado e coloque no Header, e então:
+
+Crie uma task:
+
+```json
+
+{
+    "descricao": "Descrição qualquer",
     "completada": false
 }
 ```
