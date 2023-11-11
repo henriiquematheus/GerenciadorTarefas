@@ -59,7 +59,7 @@ Faça login:
 }
 
 ```
-pegue o token gerado e coloque no Header, e então:
+pegue o token gerado e então:
 
 Crie uma task:
 
