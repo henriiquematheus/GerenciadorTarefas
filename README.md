@@ -7,6 +7,8 @@ API Restful de um gerenciador de tarefas
 
 Usuários:
 
+GET /users - Listar todos usuários
+
 POST /users - Criar um novo usuário.
 
 POST /users/login - Fazer login.
