@@ -1,15 +1,14 @@
-/// graphqlServer.js
+
 const { ApolloServer, gql } = require('apollo-server-express');
 const express = require('express');
 const mongoose = require('mongoose');
 
-// Importe seus modelos e controladores aqui
+
 const Task = require('./models/task');
 const User = require('./models/user');
 const taskController = require('./controllers/taskController');
 const userController = require('./controllers/userController');
 
-// Defina seu schema GraphQL
 const typeDefs = gql`
   type Task {
     _id: ID!
@@ -40,7 +39,7 @@ const typeDefs = gql`
   }
 `;
 
-// Implemente os resolvers para suas operações
+
 const resolvers = {
   Query: {
     tasks: async () => {
@@ -98,7 +97,7 @@ const startApolloServer = async () => {
   
     server.applyMiddleware({ app });
   
-    // Configurações adicionais do Express, se houver
+  
   
     return { server, app };
   };

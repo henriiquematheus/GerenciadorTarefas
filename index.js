@@ -1,16 +1,16 @@
-// index.js
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const { ApolloServer } = require('apollo-server-express');
-const startApolloServer = require('./graphqlServer');
+const startApolloServer = require('./graphqlserver');
 
-// Importe seus modelos e controladores aqui
+
 const User = require('./models/user');
 const Task = require('./models/task');
 const userController = require('./controllers/userController');
 const taskController = require('./controllers/taskController');
 
-// Importe suas rotas
+
 const userRoutes = require('./routes/userRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 
@@ -24,7 +24,7 @@ const startServer = async () => {
 
   app.use(bodyParser.json());
 
-  // Use suas rotas
+  
   app.use('/users', userRoutes);
   app.use('/tasks', taskRoutes);
 
