@@ -6,6 +6,9 @@ const mongoose = require('mongoose');
 
 const Task = require('./models/task');
 const User = require('./models/user');
+const List = require('./models/list');
+
+const auth = require('./middlewares/auth');
 const taskController = require('./controllers/taskController');
 const userController = require('./controllers/userController');
 
