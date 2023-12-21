@@ -8,16 +8,25 @@ RESTful API for a task manager
 Users:
 
 GET /users - List all users.
+
 POST /users - Create a new user.
+
 POST /users/login - Log in.
+
 POST /users/logout - Log out.
+
 POST /users/logoutAll - Log out from all devices.
+
 Tasks:
 
 POST /tasks - Create a new task.
+
 GET /tasks - Get all tasks from the authenticated user.
+
 GET /tasks/:id - Get a specific task.
+
 PUT /tasks/:id - Update a task.
+
 DELETE /tasks/:id - Delete a task.
 
 
