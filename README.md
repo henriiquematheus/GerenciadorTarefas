@@ -1,50 +1,41 @@
-# GerenciadorTarefas
-API Restful de um gerenciador de tarefas
+# Task Manager
+RESTful API for a task manager
 
-## Documentação da API
+## API Documentation
 
 ### Endpoints:
 
-Usuários:
+Users:
 
-GET /users - Listar todos usuários
+GET /users - List all users.
+POST /users - Create a new user.
+POST /users/login - Log in.
+POST /users/logout - Log out.
+POST /users/logoutAll - Log out from all devices.
+Tasks:
 
-POST /users - Criar um novo usuário.
-
-POST /users/login - Fazer login.
-
-POST /users/logout - Fazer logout.
-
-POST /users/logoutAll - Fazer logout de todos os dispositivos.
-
-Tarefas:
-
-POST /tasks - Criar uma nova tarefa.
-
-GET /tasks - Obter todas as tarefas do usuário autenticado.
-
-GET /tasks/:id - Obter uma tarefa específica.
-
-PUT /tasks/:id - Atualizar uma tarefa.
-
-DELETE /tasks/:id - Excluir uma tarefa.
+POST /tasks - Create a new task.
+GET /tasks - Get all tasks from the authenticated user.
+GET /tasks/:id - Get a specific task.
+PUT /tasks/:id - Update a task.
+DELETE /tasks/:id - Delete a task.
 
 
-## Variáveis de Ambiente
+## Environment Variables
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+To run this project, you'll need to add the following environment variables to your .env file:
 
-`MONGO_URL=mongodb+srv://user:user@cluster0.1mwomxe.mongodb.net/`
+`MONGO_URL=`
 
-`DB_NAME=Cluster0`
+`DB_NAME=`
 
-`JWT_SECRET_KEY=123`
+`JWT_SECRET_KEY=`
 
-`PORT=8000`
+`PORT=`
 
-## Demonstração
+## Demo
 
-Crie um user:
+Create a user:
 
 ```json
 {
@@ -53,7 +44,7 @@ Crie um user:
     "password": "123456"
 }
 ```
-Faça login:
+Login:
 
 ```json
 {
@@ -62,9 +53,9 @@ Faça login:
 }
 
 ```
-pegue o Bearer token gerado e então:
+Retrieve the generated Bearer token and then:
 
-Crie uma task:
+Create a task:
 
 ```json
 
